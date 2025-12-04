@@ -1,0 +1,22 @@
+Detalles de la conexión a la API REST con tasas de cambio del proyecto 2
+----------------------------------------------------------------------------------------
+URL: https://openexchangerates.org/api/latest.json
+API-key: 90546d04d8f84cbebd32eea80a7775c5
+
+Al crear la conexión en el trabajo de copia, llenar los campos de esta manera:
+
+En el primer paso, elegir el conector REST:
+
+Base URL: https://openexchangerates.org
+Token de URL de audiencia: (dejarlo vacío)
+Tipo de autenticación: Anónima
+
+En el segundo paso:
+
+Dirección URL relativa: /api/latest.json
+Método de solicitud: GET
+
+Encabezados adicionales: 
+    Añadir un nuevo encabezado
+    Nombre: Authorization
+    Valor: Token 90546d04d8f84cbebd32eea80a7775c5

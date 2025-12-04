@@ -1,0 +1,4 @@
+Dirección URL: https://librofabric.dfs.core.windows.net/datos
+Tipo de autenticación: Firma de acceso compartido (SAS)
+Token de SAS: sv=2023-11-03&st=2025-08-24T08%3A25%3A00Z&se=2036-08-26T08%3A25%3A00Z&sr=c&sp=rl&sig=Wg8RgYFf6Il0nyZVsDGuO28%2FIzbK%2Bkcnb3WHhCfeujI%3D
+

@@ -1,0 +1,5 @@
+Detalles de la conexión a la API REST con tasas de cambio del proyecto 2
+----------------------------------------------------------------------------------------
+URL: https://openexchangerates.org/api/latest.json
+API-key: 90546d04d8f84cbebd32eea80a7775c5
+

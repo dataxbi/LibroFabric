@@ -1,0 +1,29 @@
+-- Insertar una nueva subcategoría
+INSERT INTO  SalesLT.ProductCategory 
+(ParentProductCategoryID, Name, rowguid)
+VALUES (1,'Electric Bikes', NEWID())
+
+-- Listar las subcategorías de la categoría Bikes
+SELECT * FROM SalesLT.ProductCategory 
+WHERE ParentProductCategoryID = 1
+
+-- Insertar varios modelos de E-Bikes
+INSERT INTO SalesLT.ProductModel 
+(Name, rowguid)
+VALUES 
+     ('E-Bike 150', NEWID()),
+     ('E-Bike 250', NEWID ())
+    
+-- Listar los modelos de E-Bikes
+SELECT * FROM SalesLT.ProductModel
+WHERE Name LIKE 'E-Bike%'
+
+-- Actualizar el nombre de un modelo
+UPDATE SalesLT.ProductModel
+SET Name = 'E-Bike 155'
+WHERE ProductModelID = 129
+
+-- Borrar el modelo E-Bike 250
+DELETE FROM SalesLT.ProductModel
+WHERE ProductModelId = 130
+

@@ -1,0 +1,10 @@
+Detalles de la conexión a Azure SQL para el proyecto 2
+------------------------------------------------------
+Servidor: fabric-intro.database.windows.net
+Base de datos: AdventureWorks_ADNF
+
+Tipo de autenticación: Básica
+Nombre de usuario: librofabric
+Contraseña: 15Enero2026
+
+NOTA: Si no se establece la conexión, espera unos minutos y vuelve a intentarlo. Es posible que el servidor aún esté iniciándose.

@@ -1,0 +1,13 @@
+Detalles de la conexión a SharePoint para el proyecto 1
+--------------------------------------------------------
+
+URL del sitio: https://dataxbi.sharepoint.com/sites/LibroFabric
+
+Tipo de autenticación: Entidad de servicio
+
+ID de inquilino: e6816e25-41db-4bb7-b1a6-25a718776f8c
+ID de cliente de la entidad de servicio: d38bc8c7-a919-4d9d-8081-bb24929f8c08
+Clave de entidad de servicio: K7R8Q~V9V1KVNiCYl_CWO9-Zn48MtRBOIjpbnbrH
+
+
+Al hacer la transformación con Power Query filtrar los archivos de la carpeta ProyectoArquitecturaMedallion.

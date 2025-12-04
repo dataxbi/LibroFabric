@@ -1,0 +1,57 @@
+-- Crear esquemas
+CREATE SCHEMA [Dimensiones]
+GO
+CREATE SCHEMA [Hechos]
+GO
+
+-- Crear tabla
+DROP TABLE IF EXISTS [Dimensiones].[Tiendas]
+GO
+CREATE TABLE [Dimensiones].[Tiendas]
+(
+    [Codigo Tienda] [char](12) NOT NULL,
+    [Tienda] [varchar](100) NOT NULL,
+    [Codigo Municipio] [int] NOT NULL
+)
+
+-- Insertar datos desde un archivo CSV
+COPY INTO [Dimensiones].[Tiendas] 
+FROM 'https://onelake.dfs.fabric.microsoft.com/<id_area_trabajo>/<id_lakehouse>/Files/dimensiones/tiendas.csv' 
+WITH (  
+    FILE_TYPE = 'CSV', 
+    FIELDTERMINATOR = ';',
+    FIRSTROW = 2,  
+)
+
+-- Consulta entre bases de datos
+SELECT 
+    t.[Codigo Tienda] AS CodigoTienda, 
+    t.[Tienda], 
+    m.[Municipio], 
+    m.[Provincia], 
+    m.[CCAA]
+FROM [Dimensiones].[Tiendas] t 
+JOIN [LH1].[dbo].[municipios] m ON t.[Codigo Municipio] = m.[INE5]
+
+-- Crear una tabla a partir de una consulta (CTAS)
+CREATE TABLE [Dimensiones].[DimTiendas] AS
+SELECT 
+    t.[Codigo Tienda] AS CodigoTienda, 
+    t.[Tienda], 
+    m.[Municipio], 
+    m.[Provincia], 
+    m.[CCAA]
+FROM [Dimensiones].[Tiendas] t 
+JOIN [LH1].[dbo].[municipios] m ON t.[Codigo Municipio] = m.[INE5]
+
+
+-- Crear una vista
+CREATE View [Dimensiones].vTiendas AS
+SELECT 
+    t.[Codigo Tienda] AS CodigoTienda, 
+    t.[Tienda], 
+    m.[Municipio], 
+    m.[Provincia], 
+    m.[CCAA]
+FROM [Dimensiones].[Tiendas] t 
+JOIN [LH1].[dbo].[municipios] m ON t.[Codigo Municipio] = m.[INE5]

@@ -1,0 +1,40 @@
+-- Listar todos los documentos
+SELECT * FROM c
+
+
+-- Seleccionar algunas propiedades
+SELECT 
+  c.id,
+  c.name,
+  c.price,
+  c.category
+FROM c
+
+
+-- Listar los 10 productos más caros
+SELECT TOP 10 * FROM c ORDER BY c.price DESC
+
+
+-- Filtrar los productos con precio mayor de 500
+SELECT * 
+FROM c
+WHERE c.price > 500
+
+
+-- Autocombinación
+SELECT
+  c.id,
+  c.name,
+  r.stars
+FROM c
+JOIN r IN c.customerRatings
+
+
+-- Listar los productos con más de 3 estrellas
+SELECT DISTINCT
+  c.id,
+  c.name,
+  r.stars
+FROM c
+JOIN r IN c.customerRatings
+WHERE r.stars > 3

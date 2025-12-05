@@ -3,7 +3,6 @@
 En este repositorio puedes encontrar los archivos que se utilizan en los ejemplos del libro.
 
 Se puede comprar en:
-- [Anaya Multimedia](https://anayamultimedia.es/libro/manuales-imprescindibles/introduccion-a-microsoft-fabric-diana-aguilera-reyna-9788441552753/)
 - [Amazon](https://www.amazon.es/Introducci%C3%B3n-Microsoft-Fabric-plataforma-IMPRESCINDIBLES/dp/8441552754)
 - [Casa del Libro](https://www.casadellibro.com/libro-introduccion-a-microsoft-fabric/9788441552753/17518883)
 - [Fnac](https://www.fnac.es/a12405970/Diana-Aguilera-Reyna-Introduccion-a-Microsoft-Fabric)

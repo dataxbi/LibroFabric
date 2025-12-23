@@ -8,5 +8,6 @@ Se puede comprar en:
 - [Fnac](https://www.fnac.es/a12405970/Diana-Aguilera-Reyna-Introduccion-a-Microsoft-Fabric)
 - [El Corte Ingés](https://www.elcorteingles.es/libros/A57094418-introduccion-a-microsoft-fabric-guia-practica-para-iniciarte-en-la-nueva-plataforma-de-datos-de-microsoft/)
 - [Librería Agapea](https://www.agapea.com/libros/Introduccion-a-Microsoft-Fabric-9788441552753-i.htm)
+- [buscalibre](https://www.buscalibre.es/libro-introduccion-a-microsoft-fabric/9788441552753/p/64736579)
 
 ![Portada del libro](./img/portada_libro_fabric.jpeg)

@@ -20,7 +20,7 @@ FROM 'https://onelake.dfs.fabric.microsoft.com/<id_area_trabajo>/<id_lakehouse>/
 WITH (  
     FILE_TYPE = 'CSV', 
     FIELDTERMINATOR = ';',
-    FIRSTROW = 2,  
+    FIRSTROW = 2  
 )
 
 -- Consulta entre bases de datos
